@@ -1,39 +1,46 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
+import imgbackgroud from "../assets/background.png";
 
 export const GlobalStyle = createGlobalStyle`
-  * {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  } 
-  html {
-      // 16px = 1 rem
-    @media (max-width: 1080px) { // pc
-      font-size: 93.75%; // 15px
-    }
-    @media (max-width: 720px) { // celular
-      font-size: 87.5%; // 14px
-    }
-  }
-  body {
-    background: #88888888;
-    -webkit-font-smoothing: antialiased;
-  }
+    box-shadow: 0px;
+}
 
-  body, input, textarea, select, button {
+
+html{
+    @media (max-width: 1080px){
+        font-size: 93.75%;
+    }
+    
+    @media (max-width: 720px){
+        font-size: 87.5%;
+    }
+}
+
+body{
+    background:#dac435  url(${imgbackgroud}) no-repeat 85%  ;
+    
+    -wekit-font-smoothing: antialiased;
+}
+
+body, input, textarea, select, button {
     font: 400 1rem "Roboto", sans-serif;
-  }
-  
-  #root {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2.5rem 1.25rem;
-  }
-  button {
+}
+
+#root{
+    max-width: inherit;
+    margin: 0px auto;
+    padding: 0rem 0rem;
+}
+
+button{
     cursor: pointer;
-  }
-  a {
+}
+
+a{
     color: inherit;
     text-decoration: none;
-  }
+}
 `;

@@ -1,6 +1,5 @@
 import React from 'react'
-import {Title, Form, Repos, Error } from './styles'
-import logo from '../../assets/logo.svg';
+import { Title, Form, Repos, Error } from './styles'
 import { FiChevronRight } from 'react-icons/fi';
 
 import { api } from '../../services/api';
@@ -64,7 +63,6 @@ export const Dashboard: React.FC = () => {
 
     return (
         <>
-              <img src={logo} alt="GitCollection" />
                 <Title>Catálogo de repositórios do Github</Title>
                 <Form 
                     ref={formEl}
